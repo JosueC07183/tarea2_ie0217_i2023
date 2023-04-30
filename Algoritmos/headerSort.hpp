@@ -23,15 +23,15 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
-#ifndef HEADER_SORT_HPP
-#def HEADER_SORT_HPP
+#include <stdio.h>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+#define DIM 7 // Definición tamaño del array.
 
-void bubbleSort(int arr[], int n);
-
-void selectionSort(int arr[], int n);
-
-void insertionSort(int arr[], int n);
-
+void BubbleSort(int length, int arr[]);
+void selectionSort(int length, int arr[]);
+void insertionSort(int length, int arr[]);
 void quickSort(int arr[], int low, int high);
+void print_array(int length, int arr[]);
 
-#endif /* HEADER_SORT_HPP */
