@@ -1,4 +1,4 @@
-/**
+/*
 Licencia MIT
 
 Copyright (c) [2023] Tarea 2 - Grupo 2 - IE 0217 - I Ciclo 2023
@@ -23,12 +23,28 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
+
+/**
+ * @file headerSort.hpp
+ * @author JosuéSC
+ * @brief Headers del programa principal.
+ * @version 0.1
+ * @date 2023-04-30
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 #include <stdio.h>
 #include <iostream>
 #include <algorithm>
 using namespace std;
 #define DIM 7 // Definición tamaño del array.
-
+/**
+ * @brief Acá se encuentran en el nombre de cada función.
+ * 
+ * @param length: esto es la longitud del array.
+ * @param arr: array por default.
+ */
 void BubbleSort(int length, int arr[]);
 void selectionSort(int length, int arr[]);
 void insertionSort(int length, int arr[]);
