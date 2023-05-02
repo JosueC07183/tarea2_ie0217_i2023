@@ -17,7 +17,7 @@ int main() {
     BubbleSort(DIM, arr);
     print_array(DIM, arr);
     cout<< "-------------------------------------------" <<endl;
-    /*cout<< "Impresión usando Selection Sort" <<endl;
+    cout<< "Impresión usando Selection Sort" <<endl;
     selectionSort(DIM, arr);
     print_array(DIM, arr);
     cout<< "-------------------------------------------" <<endl;
@@ -27,6 +27,6 @@ int main() {
     cout<< "-------------------------------------------" <<endl;
     cout<< "Impresión usando Quick Sort" <<endl;
     quickSort(arr, 0, 6);
-    print_array(DIM, arr);*/
+    print_array(DIM, arr);
     return 0;
 }
