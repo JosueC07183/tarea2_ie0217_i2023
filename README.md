@@ -22,7 +22,7 @@ swaps en él es igual al número de pares de inversión en la matriz dada. Cuand
 - quickSort: su clasificación de comparación es inestable con un rendimiento mediocre. Quicksort utiliza el método de partición y puede funcionar, en el mejor de los casos y en promedio a: O(n log (n)). No obstante, puede funcionar en O(n^2) en el peor de los casos. Lo bueno de este algoritmo es que para arrays muy grandes es muy eficiente.
 
 ## Comandos para correr la tarea
-- Basta con abrir un terminal dentro de la carpeta ``tareaDos``y escribir el siguiente comando:
+- Basta con abrir un terminal dentro de la carpeta ``Algoritmos``y escribir el siguiente comando:
 ```
 make run
 ```
