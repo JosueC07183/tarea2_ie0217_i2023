@@ -1,4 +1,4 @@
-/*
+/**
 Licencia MIT
 
 Copyright (c) [2023] Tarea 2 - Grupo 2 - IE 0217 - I Ciclo 2023
