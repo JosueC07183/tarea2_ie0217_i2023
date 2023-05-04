@@ -1,0 +1,144 @@
+\hypertarget{headerSort_8hpp}{}\doxysection{Algoritmos/header\+Sort.hpp File Reference}
+\label{headerSort_8hpp}\index{Algoritmos/headerSort.hpp@{Algoritmos/headerSort.hpp}}
+
+
+Headers del programa principal.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+Include dependency graph for header\+Sort.\+hpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{headerSort_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{headerSort_8hpp_ac25189db92959bff3c6c2adf4c34b50a}\label{headerSort_8hpp_ac25189db92959bff3c6c2adf4c34b50a}} 
+\#define {\bfseries DIM}~7
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{headerSort_8hpp_a9256ea7a1cd6b1791976f2092c47a17a}{Bubble\+Sort}} (int length, int arr\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Acá se encuentran en el nombre de cada función. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{headerSort_8hpp_a7affa5c09023b994962ba53a7452debf}{selection\+Sort}} (int length, int arr\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em La idea es seleccionar el elemento más pequeño y colocarlo correctamente. Esa es la función del ciclo for, ir comparando cada elemento y si es menor, lo desplaza a la izquierda, es decir, hace swap esto porque se tiene un condicional encargado de esto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{headerSort_8hpp_a036f75dfdc2b04b1754853abbf82f09a}{insertion\+Sort}} (int length, int arr\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Consta de dos ciclos for, el primero se encarga de reco-\/ rrer la dimensión del array. Donde se usa la variable temp para almacenarlo. El segundo loop for se encarga de ir decrementando el recorrido de los elementos, y ahora la variable pos toma la posición del array actual. Luego, el ciclo while se ejecutará siempre que sea mayor a cero y la posición actual sea mayor al que esta en la variable pos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{headerSort_8hpp_a6deda3bd254bf5da0c533d0a02b81922}{quick\+Sort}} (int arr\mbox{[}$\,$\mbox{]}, int low, int high)
+\begin{DoxyCompactList}\small\item\em Primeramente se define el pivote, haciendo el promedio del array. Luego, con el primer while, se ejecuta mientras i sea menor a j, entonces se toma el elemento menor al pivote y se incrementa. Pero el pivote tendrá elementos mayores a él, por eso se hacen a la derecha. Una vez que se han divido los elementos, resulta que estos no están acomod-\/ ados pero gracias al swap es posible reordenarlos y el condicional toma el valor low(y el high) y lo compara, para usar la función quick\+Sort, es decir, realizar toda el algoritmo de nuevo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{headerSort_8hpp_ab5ae67f62e820a70e17ddb0c616cc08b}\label{headerSort_8hpp_ab5ae67f62e820a70e17ddb0c616cc08b}} 
+void {\bfseries print\+\_\+array} (int length, int arr\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Headers del programa principal. 
+
+Licencia MIT
+
+Copyright (c) \mbox{[}2023\mbox{]} Tarea 2 -\/ Grupo 2 -\/ IE 0217 -\/ I Ciclo 2023
+
+Se concede aquí, sin cargo, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el \char`\"{}\+Software\char`\"{}), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y para permitir a las personas a quienes se les proporcione el Software que lo hagan, sujeto a las siguientes condiciones\+:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA \char`\"{}\+TAL CUAL\char`\"{}, SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍ\+CITA, INCLUYENDO PERO NO LIMITADO A GARANTÍ\+AS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓ\+SITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES POR NINGUNA RECLAMACIÓN, DAÑO O OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN CONTRACTUAL, AGRAVIO O DE OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTROS ACUERDOS EN EL SOFTWARE.
+
+\begin{DoxyAuthor}{Author}
+Josué\+SC 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/04-\/30
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{headerSort_8hpp_a9256ea7a1cd6b1791976f2092c47a17a}\label{headerSort_8hpp_a9256ea7a1cd6b1791976f2092c47a17a}} 
+\index{headerSort.hpp@{headerSort.hpp}!BubbleSort@{BubbleSort}}
+\index{BubbleSort@{BubbleSort}!headerSort.hpp@{headerSort.hpp}}
+\doxysubsubsection{\texorpdfstring{BubbleSort()}{BubbleSort()}}
+{\footnotesize\ttfamily void Bubble\+Sort (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{int}]{arr\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Acá se encuentran en el nombre de cada función. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & esto es la longitud del array. \\
+\hline
+{\em arr} & array por default.\\
+\hline
+\end{DoxyParams}
+Acá se encuentran en el nombre de cada función. Se usa un ciclo for y un condicional para ir comparando cada elemento del arrray. Como el primer no tiene nadie con quién compararse al lado izquierdo solo se compara con el de la derecha. Pero, el segundo elemento se debe comparse con los dos números (izquierda y derecha) . Y así recursivamente hasta ordenarse, en cada iteración se hace swap de los números, dependiendo de si es mayor o menor. 
+\begin{DoxyParams}{Parameters}
+{\em mod} & identificador del bubble\+Sort. \\
+\hline
+{\em temp} & variable temporal a guardar.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{headerSort_8hpp_a036f75dfdc2b04b1754853abbf82f09a}\label{headerSort_8hpp_a036f75dfdc2b04b1754853abbf82f09a}} 
+\index{headerSort.hpp@{headerSort.hpp}!insertionSort@{insertionSort}}
+\index{insertionSort@{insertionSort}!headerSort.hpp@{headerSort.hpp}}
+\doxysubsubsection{\texorpdfstring{insertionSort()}{insertionSort()}}
+{\footnotesize\ttfamily void insertion\+Sort (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{int}]{arr\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Consta de dos ciclos for, el primero se encarga de reco-\/ rrer la dimensión del array. Donde se usa la variable temp para almacenarlo. El segundo loop for se encarga de ir decrementando el recorrido de los elementos, y ahora la variable pos toma la posición del array actual. Luego, el ciclo while se ejecutará siempre que sea mayor a cero y la posición actual sea mayor al que esta en la variable pos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & variable que guarda la posición actual del array. \\
+\hline
+{\em temp} & variable que almacena el array original. \\
+\hline
+{\em j} & contador que se decrementa conforme se recorre el array. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{headerSort_8hpp_a6deda3bd254bf5da0c533d0a02b81922}\label{headerSort_8hpp_a6deda3bd254bf5da0c533d0a02b81922}} 
+\index{headerSort.hpp@{headerSort.hpp}!quickSort@{quickSort}}
+\index{quickSort@{quickSort}!headerSort.hpp@{headerSort.hpp}}
+\doxysubsubsection{\texorpdfstring{quickSort()}{quickSort()}}
+{\footnotesize\ttfamily void quick\+Sort (\begin{DoxyParamCaption}\item[{int}]{arr\mbox{[}$\,$\mbox{]},  }\item[{int}]{low,  }\item[{int}]{high }\end{DoxyParamCaption})}
+
+
+
+Primeramente se define el pivote, haciendo el promedio del array. Luego, con el primer while, se ejecuta mientras i sea menor a j, entonces se toma el elemento menor al pivote y se incrementa. Pero el pivote tendrá elementos mayores a él, por eso se hacen a la derecha. Una vez que se han divido los elementos, resulta que estos no están acomod-\/ ados pero gracias al swap es posible reordenarlos y el condicional toma el valor low(y el high) y lo compara, para usar la función quick\+Sort, es decir, realizar toda el algoritmo de nuevo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pivote} & esta variable es la que se encarga de particionar el arreglo. \\
+\hline
+{\em low} & acá se guarda los elementos menores al pivote. \\
+\hline
+{\em high} & guarda los elementos mayores al pivote. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{headerSort_8hpp_a7affa5c09023b994962ba53a7452debf}\label{headerSort_8hpp_a7affa5c09023b994962ba53a7452debf}} 
+\index{headerSort.hpp@{headerSort.hpp}!selectionSort@{selectionSort}}
+\index{selectionSort@{selectionSort}!headerSort.hpp@{headerSort.hpp}}
+\doxysubsubsection{\texorpdfstring{selectionSort()}{selectionSort()}}
+{\footnotesize\ttfamily void selection\+Sort (\begin{DoxyParamCaption}\item[{int}]{length,  }\item[{int}]{arr\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+La idea es seleccionar el elemento más pequeño y colocarlo correctamente. Esa es la función del ciclo for, ir comparando cada elemento y si es menor, lo desplaza a la izquierda, es decir, hace swap esto porque se tiene un condicional encargado de esto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+\_\+\+Min} & este es el elemento pequeño que se encuentra en cada iteración. \\
+\hline
+\end{DoxyParams}
