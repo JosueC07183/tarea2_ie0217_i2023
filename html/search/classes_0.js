@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['myexception_8',['MyException',['../classMyException.html',1,'']]]
+  ['myexception_16',['MyException',['../classMyException.html',1,'']]]
 ];

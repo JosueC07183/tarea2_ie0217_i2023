@@ -68,39 +68,211 @@ $(function() {
 <div class="title">Stack&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Acá se implementa un template que inicialmente muestra el tamaño de la pila. Que es de 3 es un atributo privado para que no se pueda editar. Luego, la función push toma el typename de la clase <a class="el" href="classStack.html" title="Acá se implementa un template que inicialmente muestra el tamaño de la pila. Que es de 3 es un atribu...">Stack</a> que se encarga de añadir un elemento al final del vector.  
+ <a href="classStack.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a892e33693ec391dd20c09a978b038a87"><td class="memItemLeft" align="right" valign="top"><a id="a892e33693ec391dd20c09a978b038a87"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>push</b> (T value)</td></tr>
+<tr class="memitem:a892e33693ec391dd20c09a978b038a87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a892e33693ec391dd20c09a978b038a87">push</a> (T value)</td></tr>
+<tr class="memdesc:a892e33693ec391dd20c09a978b038a87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se imprime el valor de la pila.  <a href="classStack.html#a892e33693ec391dd20c09a978b038a87">More...</a><br /></td></tr>
 <tr class="separator:a892e33693ec391dd20c09a978b038a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2ea0e8c3293648589dd734d52487408"><td class="memItemLeft" align="right" valign="top"><a id="aa2ea0e8c3293648589dd734d52487408"></a>
-T&#160;</td><td class="memItemRight" valign="bottom"><b>pop</b> ()</td></tr>
+<tr class="memitem:aa2ea0e8c3293648589dd734d52487408"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#aa2ea0e8c3293648589dd734d52487408">pop</a> ()</td></tr>
+<tr class="memdesc:aa2ea0e8c3293648589dd734d52487408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Después se toma a T, que elimina el primer elemento de la cola, por eso es que se usa un condicional ya que se hace uso de <a class="el" href="classStack.html#a275d43ff89b91a9c6c5636cc8539d285" title="Acá básicamente devolverá un true si la lista está vacía, un false caso contrario.">empty()</a> y devolver true si el vector está vacío o false caso contrario. Solo que en este caso se usa throw, y esto sirve para lanzar una excepción si se detecta un problema. Fuera del condicional T value devuelve una referencia al último elemento de la lista y al mismo tiempo se elimina el último elemento.  <a href="classStack.html#aa2ea0e8c3293648589dd734d52487408">More...</a><br /></td></tr>
 <tr class="separator:aa2ea0e8c3293648589dd734d52487408"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0992f5d5b74abd9c717e108ecd6dbb9c"><td class="memItemLeft" align="right" valign="top"><a id="a0992f5d5b74abd9c717e108ecd6dbb9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>clear</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a0992f5d5b74abd9c717e108ecd6dbb9c">clear</a> ()</td></tr>
+<tr class="memdesc:a0992f5d5b74abd9c717e108ecd6dbb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">La función void clear, elimina todos los elementos. <br /></td></tr>
 <tr class="separator:a0992f5d5b74abd9c717e108ecd6dbb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a275d43ff89b91a9c6c5636cc8539d285"><td class="memItemLeft" align="right" valign="top"><a id="a275d43ff89b91a9c6c5636cc8539d285"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>empty</b> () const</td></tr>
+<tr class="memitem:a275d43ff89b91a9c6c5636cc8539d285"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a275d43ff89b91a9c6c5636cc8539d285">empty</a> () const</td></tr>
+<tr class="memdesc:a275d43ff89b91a9c6c5636cc8539d285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acá básicamente devolverá un true si la lista está vacía, un false caso contrario.  <a href="classStack.html#a275d43ff89b91a9c6c5636cc8539d285">More...</a><br /></td></tr>
 <tr class="separator:a275d43ff89b91a9c6c5636cc8539d285"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ff5074af78708de9b0df2831d844b1"><td class="memItemLeft" align="right" valign="top"><a id="a63ff5074af78708de9b0df2831d844b1"></a>
-std::size_t&#160;</td><td class="memItemRight" valign="bottom"><b>size</b> () const</td></tr>
+<tr class="memitem:a63ff5074af78708de9b0df2831d844b1"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a63ff5074af78708de9b0df2831d844b1">size</a> () const</td></tr>
+<tr class="memdesc:a63ff5074af78708de9b0df2831d844b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">En esta pequeña función se muestra el tamaño de la lista Eso justifica el uso de .<a class="el" href="classStack.html#a63ff5074af78708de9b0df2831d844b1" title="En esta pequeña función se muestra el tamaño de la lista Eso justifica el uso de ....">size()</a>.  <a href="classStack.html#a63ff5074af78708de9b0df2831d844b1">More...</a><br /></td></tr>
 <tr class="separator:a63ff5074af78708de9b0df2831d844b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c47d40e3007c38a8ced650f83e070d2"><td class="memItemLeft" align="right" valign="top"><a id="a9c47d40e3007c38a8ced650f83e070d2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>foreach</b> (const std::function&lt; void(T &amp;)&gt; &amp;func)</td></tr>
+<tr class="memitem:a9c47d40e3007c38a8ced650f83e070d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a9c47d40e3007c38a8ced650f83e070d2">foreach</a> (const std::function&lt; void(T &amp;)&gt; &amp;func)</td></tr>
+<tr class="memdesc:a9c47d40e3007c38a8ced650f83e070d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Esta función no devuelve ningún valor, ya que es un void. Toma la referencia sobre T. y los compara con la referencia func. Luego, se imprimen los valores del inicio y el final de la pila.  <a href="classStack.html#a9c47d40e3007c38a8ced650f83e070d2">More...</a><br /></td></tr>
 <tr class="separator:a9c47d40e3007c38a8ced650f83e070d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
 class Stack&lt; T &gt;</h3>
 
-<p>Licencia MIT</p>
-<p>Copyright (c) [2023] Tarea 2 - Grupo 2 - IE 0217 - I Ciclo 2023</p>
-<p>Se concede aquí, sin cargo, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el "Software"), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y para permitir a las personas a quienes se les proporcione el Software que lo hagan, sujeto a las siguientes condiciones:</p>
-<p>El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del Software.</p>
-<p>EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, INCLUYENDO PERO NO LIMITADO A GARANTÍAS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓSITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES POR NINGUNA RECLAMACIÓN, DAÑO O OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN CONTRACTUAL, AGRAVIO O DE OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTROS ACUERDOS EN EL SOFTWARE. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>Templates/stackTemplate.cpp</li>
+<p>Acá se implementa un template que inicialmente muestra el tamaño de la pila. Que es de 3 es un atributo privado para que no se pueda editar. Luego, la función push toma el typename de la clase <a class="el" href="classStack.html" title="Acá se implementa un template que inicialmente muestra el tamaño de la pila. Que es de 3 es un atribu...">Stack</a> que se encarga de añadir un elemento al final del vector. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a275d43ff89b91a9c6c5636cc8539d285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a275d43ff89b91a9c6c5636cc8539d285">&#9670;&nbsp;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classStack.html">Stack</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Acá básicamente devolverá un true si la lista está vacía, un false caso contrario. </p>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
+</div>
+</div>
+<a id="a9c47d40e3007c38a8ced650f83e070d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c47d40e3007c38a8ced650f83e070d2">&#9670;&nbsp;</a></span>foreach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classStack.html">Stack</a>&lt; T &gt;::foreach </td>
+          <td>(</td>
+          <td class="paramtype">const std::function&lt; void(T &amp;)&gt; &amp;&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Esta función no devuelve ningún valor, ya que es un void. Toma la referencia sobre T. y los compara con la referencia func. Luego, se imprimen los valores del inicio y el final de la pila. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>variable enetera del stack usado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2ea0e8c3293648589dd734d52487408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2ea0e8c3293648589dd734d52487408">&#9670;&nbsp;</a></span>pop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T <a class="el" href="classStack.html">Stack</a>&lt; T &gt;::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Después se toma a T, que elimina el primer elemento de la cola, por eso es que se usa un condicional ya que se hace uso de <a class="el" href="classStack.html#a275d43ff89b91a9c6c5636cc8539d285" title="Acá básicamente devolverá un true si la lista está vacía, un false caso contrario.">empty()</a> y devolver true si el vector está vacío o false caso contrario. Solo que en este caso se usa throw, y esto sirve para lanzar una excepción si se detecta un problema. Fuera del condicional T value devuelve una referencia al último elemento de la lista y al mismo tiempo se elimina el último elemento. </p>
+<dl class="section return"><dt>Returns</dt><dd>T </dd></dl>
+
+</div>
+</div>
+<a id="a892e33693ec391dd20c09a978b038a87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a892e33693ec391dd20c09a978b038a87">&#9670;&nbsp;</a></span>push()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classStack.html">Stack</a>&lt; T &gt;::push </td>
+          <td>(</td>
+          <td class="paramtype">T&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Se imprime el valor de la pila. </p>
+<p>Se añade un elemento al final del vector.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>int que almacena el valor de la pila. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a63ff5074af78708de9b0df2831d844b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63ff5074af78708de9b0df2831d844b1">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classStack.html">Stack</a>&lt; T &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>En esta pequeña función se muestra el tamaño de la lista Eso justifica el uso de .<a class="el" href="classStack.html#a63ff5074af78708de9b0df2831d844b1" title="En esta pequeña función se muestra el tamaño de la lista Eso justifica el uso de ....">size()</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::size_t: tamaño de la lista. </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>Templates/<a class="el" href="stackTemplate_8cpp.html">stackTemplate.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

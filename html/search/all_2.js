@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['insertionsort_2',['insertionSort',['../headerSort_8hpp.html#a036f75dfdc2b04b1754853abbf82f09a',1,'headerSort.cpp']]]
+  ['empty_2',['empty',['../classStack.html#a275d43ff89b91a9c6c5636cc8539d285',1,'Stack']]]
 ];

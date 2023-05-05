@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['selectionsort_14',['selectionSort',['../headerSort_8hpp.html#a7affa5c09023b994962ba53a7452debf',1,'headerSort.cpp']]]
+  ['foreach_23',['foreach',['../classStack.html#a9c47d40e3007c38a8ced650f83e070d2',1,'Stack']]]
 ];

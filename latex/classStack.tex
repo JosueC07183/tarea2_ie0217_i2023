@@ -1,42 +1,122 @@
 \hypertarget{classStack}{}\doxysection{Stack$<$ T $>$ Class Template Reference}
 \label{classStack}\index{Stack$<$ T $>$@{Stack$<$ T $>$}}
+
+
+Acá se implementa un template que inicialmente muestra el tamaño de la pila. Que es de 3 es un atributo privado para que no se pueda editar. Luego, la función push toma el typename de la clase \mbox{\hyperlink{classStack}{Stack}} que se encarga de añadir un elemento al final del vector.  
+
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStack_a892e33693ec391dd20c09a978b038a87}\label{classStack_a892e33693ec391dd20c09a978b038a87}} 
-void {\bfseries push} (T value)
-\item 
-\mbox{\Hypertarget{classStack_aa2ea0e8c3293648589dd734d52487408}\label{classStack_aa2ea0e8c3293648589dd734d52487408}} 
-T {\bfseries pop} ()
-\item 
+void \mbox{\hyperlink{classStack_a892e33693ec391dd20c09a978b038a87}{push}} (T value)
+\begin{DoxyCompactList}\small\item\em Se imprime el valor de la pila. \end{DoxyCompactList}\item 
+T \mbox{\hyperlink{classStack_aa2ea0e8c3293648589dd734d52487408}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Después se toma a T, que elimina el primer elemento de la cola, por eso es que se usa un condicional ya que se hace uso de \mbox{\hyperlink{classStack_a275d43ff89b91a9c6c5636cc8539d285}{empty()}} y devolver true si el vector está vacío o false caso contrario. Solo que en este caso se usa throw, y esto sirve para lanzar una excepción si se detecta un problema. Fuera del condicional T value devuelve una referencia al último elemento de la lista y al mismo tiempo se elimina el último elemento. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classStack_a0992f5d5b74abd9c717e108ecd6dbb9c}\label{classStack_a0992f5d5b74abd9c717e108ecd6dbb9c}} 
-void {\bfseries clear} ()
-\item 
-\mbox{\Hypertarget{classStack_a275d43ff89b91a9c6c5636cc8539d285}\label{classStack_a275d43ff89b91a9c6c5636cc8539d285}} 
-bool {\bfseries empty} () const
-\item 
-\mbox{\Hypertarget{classStack_a63ff5074af78708de9b0df2831d844b1}\label{classStack_a63ff5074af78708de9b0df2831d844b1}} 
-std\+::size\+\_\+t {\bfseries size} () const
-\item 
-\mbox{\Hypertarget{classStack_a9c47d40e3007c38a8ced650f83e070d2}\label{classStack_a9c47d40e3007c38a8ced650f83e070d2}} 
-void {\bfseries foreach} (const std\+::function$<$ void(T \&)$>$ \&func)
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classStack_a0992f5d5b74abd9c717e108ecd6dbb9c}{clear}} ()
+\begin{DoxyCompactList}\small\item\em La función void clear, elimina todos los elementos. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStack_a275d43ff89b91a9c6c5636cc8539d285}{empty}} () const
+\begin{DoxyCompactList}\small\item\em Acá básicamente devolverá un true si la lista está vacía, un false caso contrario. \end{DoxyCompactList}\item 
+std\+::size\+\_\+t \mbox{\hyperlink{classStack_a63ff5074af78708de9b0df2831d844b1}{size}} () const
+\begin{DoxyCompactList}\small\item\em En esta pequeña función se muestra el tamaño de la lista Eso justifica el uso de .\mbox{\hyperlink{classStack_a63ff5074af78708de9b0df2831d844b1}{size()}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStack_a9c47d40e3007c38a8ced650f83e070d2}{foreach}} (const std\+::function$<$ void(T \&)$>$ \&func)
+\begin{DoxyCompactList}\small\item\em Esta función no devuelve ningún valor, ya que es un void. Toma la referencia sobre T. y los compara con la referencia func. Luego, se imprimen los valores del inicio y el final de la pila. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \subsubsection*{template$<$typename T$>$\newline
 class Stack$<$ T $>$}
 
-Licencia MIT
+Acá se implementa un template que inicialmente muestra el tamaño de la pila. Que es de 3 es un atributo privado para que no se pueda editar. Luego, la función push toma el typename de la clase \mbox{\hyperlink{classStack}{Stack}} que se encarga de añadir un elemento al final del vector. 
 
-Copyright (c) \mbox{[}2023\mbox{]} Tarea 2 -\/ Grupo 2 -\/ IE 0217 -\/ I Ciclo 2023
 
-Se concede aquí, sin cargo, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el \char`\"{}\+Software\char`\"{}), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y para permitir a las personas a quienes se les proporcione el Software que lo hagan, sujeto a las siguientes condiciones\+:
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
 
-El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del Software.
 
-EL SOFTWARE SE PROPORCIONA \char`\"{}\+TAL CUAL\char`\"{}, SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍ\+CITA, INCLUYENDO PERO NO LIMITADO A GARANTÍ\+AS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓ\+SITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES POR NINGUNA RECLAMACIÓN, DAÑO O OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN CONTRACTUAL, AGRAVIO O DE OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTROS ACUERDOS EN EL SOFTWARE. 
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStack_a275d43ff89b91a9c6c5636cc8539d285}\label{classStack_a275d43ff89b91a9c6c5636cc8539d285}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!empty@{empty}}
+\index{empty@{empty}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Acá básicamente devolverá un true si la lista está vacía, un false caso contrario. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStack_a9c47d40e3007c38a8ced650f83e070d2}\label{classStack_a9c47d40e3007c38a8ced650f83e070d2}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!foreach@{foreach}}
+\index{foreach@{foreach}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{foreach()}{foreach()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::foreach (\begin{DoxyParamCaption}\item[{const std\+::function$<$ void(T \&)$>$ \&}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Esta función no devuelve ningún valor, ya que es un void. Toma la referencia sobre T. y los compara con la referencia func. Luego, se imprimen los valores del inicio y el final de la pila. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & variable enetera del stack usado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStack_aa2ea0e8c3293648589dd734d52487408}\label{classStack_aa2ea0e8c3293648589dd734d52487408}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::pop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Después se toma a T, que elimina el primer elemento de la cola, por eso es que se usa un condicional ya que se hace uso de \mbox{\hyperlink{classStack_a275d43ff89b91a9c6c5636cc8539d285}{empty()}} y devolver true si el vector está vacío o false caso contrario. Solo que en este caso se usa throw, y esto sirve para lanzar una excepción si se detecta un problema. Fuera del condicional T value devuelve una referencia al último elemento de la lista y al mismo tiempo se elimina el último elemento. 
+
+\begin{DoxyReturn}{Returns}
+T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStack_a892e33693ec391dd20c09a978b038a87}\label{classStack_a892e33693ec391dd20c09a978b038a87}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}}
+\index{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se imprime el valor de la pila. 
+
+Se añade un elemento al final del vector.
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & int que almacena el valor de la pila. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStack_a63ff5074af78708de9b0df2831d844b1}\label{classStack_a63ff5074af78708de9b0df2831d844b1}} 
+\index{Stack$<$ T $>$@{Stack$<$ T $>$}!size@{size}}
+\index{size@{size}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::size\+\_\+t \mbox{\hyperlink{classStack}{Stack}}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+En esta pequeña función se muestra el tamaño de la lista Eso justifica el uso de .\mbox{\hyperlink{classStack_a63ff5074af78708de9b0df2831d844b1}{size()}}. 
+
+\begin{DoxyReturn}{Returns}
+std\+::size\+\_\+t\+: tamaño de la lista. 
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Templates/stack\+Template.\+cpp\end{DoxyCompactItemize}
+Templates/\mbox{\hyperlink{stackTemplate_8cpp}{stack\+Template.\+cpp}}\end{DoxyCompactItemize}
