@@ -23,17 +23,31 @@ OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U
 OTROS ACUERDOS EN EL SOFTWARE.
 */
 
-#include <iostream>
+/**
+ * @file exceptions.cpp
+ * @author Josué Salmerón Córdoda
+ * @brief Inicialmente, se hace un include de exceptions.hpp para hacer uso de la clase MyException, 
+ * que apunta a un carácter constante y el valor del entero apuntado no puede cambiar. Por su parte what()
+ * se usa para identificar una excepción dentro de un string.
+ * 
+ * Nota: Este archivo ha sido editado por mi persona pero ha sido tomado del usuario (ebadilla10) de
+ * su perfil de Github. 
+ * @version 0.1
+ * @date 2023-05-06
+ * 
+ * @copyright Copyright (c) 2023
+ * 
+ */
 
-class MyException : public std::exception {
-public:
-  const char* what() const throw() {
-    return "My custom exception";
-  }
-};
+#include <iostream>
+#include "exceptions.hpp"
 
 int main() {
-
+/**
+ * @brief Primero se hace el try de MyException, luego se lanza la excepción y después se le hace catch, para
+ * luego imprimir el mensaje por consola y terminar el programa.
+ * 
+ */
   try {
     throw MyException();
   } catch (std::exception& e) {

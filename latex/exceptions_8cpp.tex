@@ -1,0 +1,58 @@
+\hypertarget{exceptions_8cpp}{}\doxysection{Excepciones/exceptions.cpp File Reference}
+\label{exceptions_8cpp}\index{Excepciones/exceptions.cpp@{Excepciones/exceptions.cpp}}
+
+
+Inicialmente, se hace un include de \mbox{\hyperlink{exceptions_8hpp_source}{exceptions.\+hpp}} para hacer uso de la clase \mbox{\hyperlink{classMyException}{My\+Exception}}, que apunta a un carácter constante y el valor del entero apuntado no puede cambiar. Por su parte what() se usa para identificar una excepción dentro de un string.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}exceptions.\+hpp\char`\"{}}\newline
+Include dependency graph for exceptions.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{exceptions_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{exceptions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Inicialmente, se hace un include de \mbox{\hyperlink{exceptions_8hpp_source}{exceptions.\+hpp}} para hacer uso de la clase \mbox{\hyperlink{classMyException}{My\+Exception}}, que apunta a un carácter constante y el valor del entero apuntado no puede cambiar. Por su parte what() se usa para identificar una excepción dentro de un string. 
+
+Licencia MIT
+
+Copyright (c) \mbox{[}2023\mbox{]} Tarea 2 -\/ Grupo 2 -\/ IE 0217 -\/ I Ciclo 2023
+
+Se concede aquí, sin cargo, a cualquier persona que obtenga una copia de este software y los archivos de documentación asociados (el \char`\"{}\+Software\char`\"{}), para utilizar el Software sin restricciones, incluyendo, sin limitación, los derechos para usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar y/o vender copias del Software, y para permitir a las personas a quienes se les proporcione el Software que lo hagan, sujeto a las siguientes condiciones\+:
+
+El aviso de copyright anterior y este aviso de permiso se incluirán en todas las copias o partes sustanciales del Software.
+
+EL SOFTWARE SE PROPORCIONA \char`\"{}\+TAL CUAL\char`\"{}, SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍ\+CITA, INCLUYENDO PERO NO LIMITADO A GARANTÍ\+AS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓ\+SITO PARTICULAR Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O TITULARES DEL COPYRIGHT SERÁN RESPONSABLES POR NINGUNA RECLAMACIÓN, DAÑO O OTRA RESPONSABILIDAD, YA SEA EN UNA ACCIÓN CONTRACTUAL, AGRAVIO O DE OTRO MODO, QUE SURJA DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O EL USO U OTROS ACUERDOS EN EL SOFTWARE.
+
+\begin{DoxyAuthor}{Author}
+Josué Salmerón Córdoda
+\end{DoxyAuthor}
+Nota\+: Este archivo ha sido editado por mi persona pero ha sido tomado del usuario (ebadilla10) de su perfil de Github. \begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2023-\/05-\/06
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2023 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{exceptions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{exceptions_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{exceptions.cpp@{exceptions.cpp}!main@{main}}
+\index{main@{main}!exceptions.cpp@{exceptions.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Primero se hace el try de \mbox{\hyperlink{classMyException}{My\+Exception}}, luego se lanza la excepción y después se le hace catch, para luego imprimir el mensaje por consola y terminar el programa.

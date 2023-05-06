@@ -135,7 +135,7 @@ Functions</h2></td></tr>
 
 <p>Esto es el llamado de la función main, aquí se carga la pila, o se apila los elementos que se van a usar (viéndolos o pensando ensamblador) ya que se hace uso de push, es decir, se están agregando elementos al final de la lista, un total de 4. Después se imprime el tamaño de la pila con .size(). Por último se hace un llamado a la función foreach para traer lo que tiene contenido value y mostrarlo por consola, además se desapila el valor del stack, esto con ayuda de .pop. de donde se atrapan las exce- pciones del programa con try y catch para estar seguros de no tener valores inapropiados. </p>
 <dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
-<p>La instancia Stack&lt;double&gt; t; conn t.pop() lanzaría una excepción ya que se quiere vaciar la pila cuando ésta no posee elementos. Se ha dejado comentada para que esto no suceda.</p>
+<p>La instancia Stack&lt;double&gt; t; con t.pop() lanzaría una excepción ya que se quiere vaciar la pila cuando ésta no posee elementos. Se ha dejado comentada para que esto no suceda.</p>
 <p>Se analiza si los elementos creados por medio de la instancia están vacíos. Pero como están llenos, entonces se eliman con s.pop(). Y luego se hace la impresión de los elementos eliminados tipo LIFO, es decir, el último que se ingresó el primero salió.</p>
 <p>Aquí se atrapa la excepción.</p>
 

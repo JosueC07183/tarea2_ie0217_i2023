@@ -1,31 +1,54 @@
 \label{index_md_README}%
 \Hypertarget{index_md_README}%
-\hypertarget{index_autotoc_md1}{}\doxysubsubsection{Escuela de Ingeniería Eléctrica}\label{index_autotoc_md1}
-\hypertarget{index_autotoc_md2}{}\doxysubsubsection{Faculta de Ingeniería}\label{index_autotoc_md2}
-\hypertarget{index_autotoc_md3}{}\doxysubsubsection{IE0217-\/\+Estructuras de Abstractas de Datos y Algoritmos}\label{index_autotoc_md3}
-\hypertarget{index_autotoc_md4}{}\doxyparagraph{Profesor\+: Esteban Badilla}\label{index_autotoc_md4}
-\hypertarget{index_autotoc_md5}{}\doxyparagraph{Estudiante\+: Josué Salmerón Córdoba}\label{index_autotoc_md5}
-\hypertarget{index_autotoc_md6}{}\doxyparagraph{I ciclo 2023}\label{index_autotoc_md6}
-\hypertarget{index_autotoc_md7}{}\doxysubsubsection{Tarea 2}\label{index_autotoc_md7}
-\hypertarget{index_autotoc_md8}{}\doxysection{Resumen}\label{index_autotoc_md8}
+\hypertarget{index_autotoc_md25}{}\doxysubsubsection{Escuela de Ingeniería Eléctrica}\label{index_autotoc_md25}
+\hypertarget{index_autotoc_md26}{}\doxysubsubsection{Faculta de Ingeniería}\label{index_autotoc_md26}
+\hypertarget{index_autotoc_md27}{}\doxysubsubsection{IE0217-\/\+Estructuras de Abstractas de Datos y Algoritmos}\label{index_autotoc_md27}
+\hypertarget{index_autotoc_md28}{}\doxyparagraph{Profesor\+: Esteban Badilla}\label{index_autotoc_md28}
+\hypertarget{index_autotoc_md29}{}\doxyparagraph{Estudiante\+: Josué Salmerón Córdoba}\label{index_autotoc_md29}
+\hypertarget{index_autotoc_md30}{}\doxyparagraph{I ciclo 2023}\label{index_autotoc_md30}
+\hypertarget{index_autotoc_md31}{}\doxysubsubsection{Tarea 2}\label{index_autotoc_md31}
+\hypertarget{index_autotoc_md32}{}\doxysection{Resumen}\label{index_autotoc_md32}
 \begin{quote}
-En esta tarea se aprovechó del prototipo de cada función o más bien de los prototipos de algoritmos de ordenamiento tales como Bubble\+Sort, inser\+Sort, selection\+Sort y quick\+Sort. A partir de esto se implementaron su lógica para observar la función que realizan (que al final de cuentas es lo mismo) sin embargo, se analizó la complejidad que tiene cada uno de estos algoritmos usando la notación Big O, de donde Bubble\+Sort posee más ventajas cuando trabaja un array pequeño. Mientras cuando se trabaja con un array grande, quick\+Sort es muy eficiente, pero siempre habrá una mejor para estos casos como lo es el caso de Merge\+Sort ya que posee una mejor estabilidad. \end{quote}
-\hypertarget{index_autotoc_md9}{}\doxysection{Análisis de la notación Big O en cada algoritmo de ordenamiento.}\label{index_autotoc_md9}
-
-\begin{DoxyItemize}
-\item Bubble\+Sort\+: Este algoritmo tiene una complejidad temporal en el peor de los caso de O(n2). Su complejidad espacial es de O(1). Por lo que el número de swaps en él es igual al número de pares de inversión en la matriz dada. Cuando los elementos del array son pocos, el algoritmo es muy eficiente.
-\item Selection\+Sort\+: posee un bajo rendimiento. Este algoritmo utiliza el método de selección y funciona en O(n$^\wedge$2) en el mejor, promedio y peor de los casos.
-\item insertion\+Sort\+: Posee un rendimiento no tan bueno, usa el método de insercción que funciona a O(n) en el mejor de los casos. Por su parte, en el peor de los casos funciona a O(n$^\wedge$2).
-\item quick\+Sort\+: su clasificación de comparación es inestable con un rendimiento mediocre. Quicksort utiliza el método de partición y puede funcionar, en el mejor de los casos y en promedio a\+: O(n log (n)). No obstante, puede funcionar en O(n$^\wedge$2) en el peor de los casos. Lo bueno de este algoritmo es que para arrays muy grandes es muy eficiente.
-\end{DoxyItemize}\hypertarget{index_autotoc_md10}{}\doxysection{Comandos para correr la tarea}\label{index_autotoc_md10}
-
-\begin{DoxyItemize}
-\item Basta con abrir un terminal dentro de la carpeta {\ttfamily Algoritmos}y escribir el siguiente comando\+: 
+En esta tarea se divide en tres partes. La primera consiste en algoritmos de ordenamiento donde se hace un análisis de la notación Big O, donde se concluye que el mejor fue el bubble\+Sort debido a que se decidió trabajar con un array pequeño, aunque también se pudo usar un array más grande y comprobar que en este caso el quick\+Sort tiene un mejor desempeño. La segunda parte de la tarea consistió en crear una nueva instancia con otro tipo de dato y por último se realizó una instrucción para disparar y hacerle {\itshape catch} a la excepción\+: {\ttfamily out\+\_\+of\+\_\+range}. Por último, en la tercer parte se realizaron las separaciones del archivos de manera correcta así como los comentarios de la explicación del código donde finalmente se muestra un mensaje por consola sobre el tipo de excepción atrapada. \end{quote}
+\hypertarget{index_autotoc_md33}{}\doxysection{Jerarquía de los archivos de la tarea.}\label{index_autotoc_md33}
+Se ha hecho un {\itshape tree} desde la carpeta\+: {\bfseries{tarea2\+\_\+ie0217\+\_\+2023}} para visualizar mejor la distribución de los directorios con sus respectivos archivos. 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{make run}
+\DoxyCodeLine{tarea2\_ie0217\_2023}
+\DoxyCodeLine{├── Algoritmos}
+\DoxyCodeLine{│   ├── headerSort.cpp}
+\DoxyCodeLine{│   ├── headerSort.hpp}
+\DoxyCodeLine{│   ├── main.cpp}
+\DoxyCodeLine{│   ├── Makefile}
+\DoxyCodeLine{│   └── README.md}
+\DoxyCodeLine{├── Doxyfile}
+\DoxyCodeLine{├── Excepciones}
+\DoxyCodeLine{│   ├── exceptions.cpp}
+\DoxyCodeLine{│   ├── exceptions.hpp}
+\DoxyCodeLine{│   ├── Makefile}
+\DoxyCodeLine{│   └── README.md}
+\DoxyCodeLine{├── html}
+\DoxyCodeLine{│   ├── .}
+\DoxyCodeLine{│   ├── .}
+\DoxyCodeLine{│   ├── .}
+\DoxyCodeLine{├── latex}
+\DoxyCodeLine{│   ├── .}
+\DoxyCodeLine{│   ├── .}
+\DoxyCodeLine{│   ├── .}
+\DoxyCodeLine{├── README.md}
+\DoxyCodeLine{└── Templates}
+\DoxyCodeLine{    ├── Makefile}
+\DoxyCodeLine{    ├── README.md}
+\DoxyCodeLine{    └── stackTemplate.cpp}
 
 \end{DoxyCode}
+ \hypertarget{index_autotoc_md34}{}\doxysection{Nota.}\label{index_autotoc_md34}
+Las carpetas {\bfseries{html}} y {\bfseries{latex}} son muy extensas, por lo que se muestran puntos suspensivos para no hacer tan grande el presente archivo. \hypertarget{index_autotoc_md35}{}\doxysection{Comandos para correr la tarea}\label{index_autotoc_md35}
 
-\end{DoxyItemize}\hypertarget{index_autotoc_md11}{}\doxysection{Referencias.}\label{index_autotoc_md11}
-\begin{quote}
-\href{https://big-o.io/}{\texttt{ Literatura consultada}} \end{quote}
+\begin{DoxyItemize}
+\item Basta con abrir un terminal dentro de las carpetas\+: {\bfseries{Algoritmos}}, {\bfseries{Templates}} y {\bfseries{Excepciones}} y escribir el siguiente comando\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+ 
+\end{DoxyItemize}
