@@ -16,7 +16,7 @@
 un carácter que no puede cambiar su valor y un string que servirá para identificar la excepción.
 
 ## Comandos para correr la tarea
-- Basta con abrir un terminal dentro de la carpeta ``exceptions``y escribir el siguiente comando:
+- Basta con abrir un terminal dentro de la carpeta ``Excepciones``y escribir el siguiente comando:
 ```
 make
 ```
