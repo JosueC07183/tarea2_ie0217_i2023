@@ -30,8 +30,9 @@ OTROS ACUERDOS EN EL SOFTWARE.
  * código implementado. Y en efecto, hay headers inútiles en este archivo. Lo que se hizo fue instalar una 
  * extensión de C++ en Vscode y cuando se comentaba cualquier header, entonces vscode de manera inmediata
  *  marca en rojo la instrucción que depende de esa librería, el hacer esto facilitó el trabajo solicitado.
- * De esa manera, los headers innecesarios son algorithm y vector. Los demás si se ocupan para trabjar con 
- * algunas funciones específicas.
+ * De esa manera, los headers innecesarios son algorithm y vector (aunque acá se dejó sin comentar porque
+ * a veces VsCode lo marca como error, pero de manera inmediata lo ignora y corre bien el programa). 
+ * Los demás si se ocupan para trabjar con algunas funciones específicas.
  * 
  * @version 0.1
  * @date 2023-05-04
@@ -41,7 +42,8 @@ OTROS ACUERDOS EN EL SOFTWARE.
  */
 
 #include <iostream>
-//#include <vector>
+#include <string>
+#include <vector>
 // #include <algorithm>
 #include <stdexcept> // se queja el typename y la excepción.
 #include <functional> // se queja el foreach.
@@ -122,6 +124,7 @@ public:
   void foreach(const std::function<void(T&)>& func) {
     std::for_each(data_.begin(), data_.end(), func);
   }
+
 };
 /**
  * @brief Esto es el llamado de la función main, aquí se carga la pila, o se apila los elementos que se
@@ -132,20 +135,42 @@ public:
  * pciones del programa con try y catch para estar seguros de no tener valores inapropiados.
  * @return int 
  */
+
 int main() {
+  
   Stack<int> s;
   s.push(2021);
   s.push(2054);
   s.push(6524);
-
+// Creando nueva instancia. Con un dato de tipo float.
+  Stack <float> r;
+  r.push(0.48);
+  r.push(0.57);
+  r.push(0.97);
+  r.push(0.99);
+/**
+ * @brief La instancia Stack<double> t; conn t.pop() lanzaría una excepción ya que se quiere
+ * vaciar la pila cuando ésta no posee elementos. Se ha dejado comentada para que esto no suceda.
+ */
+// Instancia que dispararía la excepción out_of_range.
+  /*Stack <double> t;
+  t.pop();*/
   std::cout << "Stack size: " << s.size() << std::endl;
+  std::cout << "Stack size: " << r.size() << std::endl; // Impresión del tamaño del stack.
 
   s.foreach([](int& value) {
     std::cout << "Value: " << value << std::endl;
   });
+  // Se imprimen los valores.
+  r.foreach([](float& value) {
+    std::cout << "Value: " << value << std::endl;
+  });
+  
 /**
- * @brief 
- * 
+ * @brief Se analiza si los elementos creados por medio de la instancia
+ * están vacíos. Pero como están llenos, entonces se eliman con s.pop().
+ * Y luego se hace la impresión de los elementos eliminados tipo LIFO, es
+ * decir, el último que se ingresó el primero salió. 
  */
   try {
     while (!s.empty()) {
@@ -157,5 +182,27 @@ int main() {
     std::cerr << "Exception: " << e.what() << std::endl;
   }
 
+  try {
+    while (!r.empty()) {
+      int value = r.pop();
+      std::cout << "Popped value: " << value << std::endl;
+    }
+    std::cout << "Stack size: " << r.size() << std::endl;
+  } catch (const std::exception& e) {
+    std::cerr << "Exception: " << e.what() << std::endl;
+  }
+/**
+ * @brief Aquí se atrapa la excepción.
+ * 
+ */
+  /*try {
+    while (!t.empty()) {
+      float value = t.pop();
+      std::cout << "Popped value: " << value << std::endl;
+    }
+    std::cout << "Stack size: " << t.size() << std::endl;
+  } catch (const std::exception& e) {
+    std::cerr << "Exception: " << e.what() << std::endl;
+  }*/
   return 0;
 }
