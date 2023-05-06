@@ -149,7 +149,7 @@ int main() {
   r.push(0.97);
   r.push(0.99);
 /**
- * @brief La instancia Stack<double> t; conn t.pop() lanzaría una excepción ya que se quiere
+ * @brief La instancia Stack<double> t; con t.pop() lanzaría una excepción ya que se quiere
  * vaciar la pila cuando ésta no posee elementos. Se ha dejado comentada para que esto no suceda.
  */
 // Instancia que dispararía la excepción out_of_range.
